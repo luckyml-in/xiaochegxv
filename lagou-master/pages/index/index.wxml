@@ -1,0 +1,8 @@
+<!--index.wxml-->
+<import src='../../template/template.wxml' />
+<view class="container">
+  <!--  文章列表  -->
+  <template is='position_link' data='{{positionList}}' />
+  <web-view src=""></web-view>
+  <view wx:if='{{showBtn}}' class="list-more" bindtap='loadMore'>{{ isLoading ? '正在加载...': '加载更多' }}</view>
+</view>

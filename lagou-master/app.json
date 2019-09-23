@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/search/search",
+    "pages/mine/mine",
+    "pages/customInfo/customInfo",
+    "pages/customDetail/customDetail",
+    "pages/resume/resume",
+    "pages/collection/collection",
+    "pages/deliver/deliver",
+    "pages/deliverDetail/deliverDetail",
+    "pages/positionDetail/positionDetail",
+    "pages/companyDetail/companyDetail",
+    "pages/interview/interview"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#00b38a",
+    "navigationBarTitleText": "今日校招",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#c2cfcc",
+    "selectedColor": "#00b38a",
+    "backgroundColor": "#f6f6f6",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "今日招聘",
+        "iconPath": "static/icon/work.png",
+        "selectedIconPath": "static/icon/work.png"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "智慧佰屋",
+        "iconPath": "static/icon/library.png",
+        "selectedIconPath": "static/icon/library.png"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "招聘日历",
+        "iconPath": "static/icon/calendar.png",
+        "selectedIconPath": "static/icon/calendar.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "static/icon/mine.png",
+        "selectedIconPath": "static/icon/mine.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

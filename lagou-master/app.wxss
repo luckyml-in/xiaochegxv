@@ -1,0 +1,63 @@
+/**app.wxss**/
+body {
+  color: #333;
+}
+
+/**  工具样式-start  **/
+.text-ellipsis {
+  /* 忽略过长一行文字 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/**  工具样式-end  **/
+
+/**  职位列表公共样式-start  **/
+.list-item {
+  display: flex;
+  padding: 10px;
+  border-bottom: 1px solid #e8e8e8;
+}
+.com-logo {
+  flex-shrink: 0;
+  width: 120px;
+  height: 80px;
+}
+.item-desc {
+  flex-grow: 1;
+  margin-left: 12px;
+  height: 70px;
+  color: #333;
+}
+.item-title {
+  display: block;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  font-size: 16px;
+  height: 61%;
+  font-weight: bold;
+}
+.item-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6%;
+  margin-bottom: 5%;
+  height: 15px;
+  line-height: 15px;
+}
+.item-pos {
+  flex-basis: 85%;
+  font-size: 12px;
+}
+.item-salary {
+  flex-basis: 45%;
+  font-size: 16px;
+  color: #00b38a;
+  text-align: right;
+}
+.item-time {
+  margin-bottom: 2%;
+  font-size: 10px;
+  color: #888;
+}
+/**  职位列表公共样式-end  **/
