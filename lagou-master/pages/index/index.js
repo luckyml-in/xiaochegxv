@@ -10,16 +10,17 @@ Page({
     isLoading: false, // 请求状态
     positionList: []
   },
+
+  /**
+     * 查看文章详情
+     */
+  viewPositionDetail: function (e) {
+    app.navTo('positionDetail', { id: e.currentTarget.dataset.id })
+  },
+
   //事件处理函数
   gotoCustomInfo: function () {
     app.navTo('customInfo')
-  },
-
-  /**
-   * 查看职位详情
-   */
-  viewPositionDetail: (e) => {
-    app.navTo('positionDetail', {positionId: e.currentTarget.dataset.pid})
   },
 
   /**

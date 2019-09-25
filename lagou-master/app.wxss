@@ -12,7 +12,7 @@ body {
 }
 /**  工具样式-end  **/
 
-/**  职位列表公共样式-start  **/
+/**  文章列表样式-start  **/
 .list-item {
   display: flex;
   padding: 10px;

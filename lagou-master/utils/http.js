@@ -1,10 +1,11 @@
 /*
- * @Author: guojingfeng
+ * @Author: wuzemin
  * @Date: 2017-09-15 13:37:55
- * @Last Modified by: guojingfeng
+ * @Last Modified by: wuzemin
  * @Last Modified time: 2017-09-17 17:24:53
  */
-var baseUrl = 'https://apis.map.qq.com'
+var baseUrl = 'http://localhost:9090';
+var xzj_url = baseUrl +'/lfj/images/xzj.jpg';
 
 /**
  * 对微信网络请求的简易封装
