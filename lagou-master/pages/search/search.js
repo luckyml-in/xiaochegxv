@@ -27,20 +27,19 @@ Page({
    */
   data: {
     articleList:[],
-    dateList: [],
-    
-    dayStyle: [
-      { month: 'current', day: new Date().getDate(), color: 'white', background: '#AAD4F5' },
-      { month: 'current', day: new Date().getDate(), color: 'white', background: '#AAD4F5' }
-    ]
+    dateList: []
   },
   
+  dayStyle: [
+    { month: 'current', day: new Date().getDate(), color: 'white', background: '#AAD4F5' },
+    { month: 'current', day: new Date().getDate(), color: 'white', background: '#AAD4F5' }
+  ],
+
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
     var that = this;
-    var dateList;
     wx.request({
       url: 'http://localhost:9090/lfj/schoolRecruitment/listSchoolRecruitmentDates', //仅为示例，并非真实的接口地址
       data: {},
@@ -50,9 +49,9 @@ Page({
       success(res) {
         that.setData({
           dateList: res.data,
-          for(dateList){
+          // for(dateList){
             
-          }
+          // }
         })
       },
     });

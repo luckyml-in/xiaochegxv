@@ -5,13 +5,13 @@
   />
   <view wx:for='{{articleList}}' wx:key='item.id' class='list-item' data-id='{{item.id}}' bindtap="viewArticleDetail">
     <div style="width:35%;align:left;">
-      <image class='com-logo' src='{{item.company_logo}}' bindload="imageLoad"></image>
+      <image class='com-logo' src='{{item.companyLogo}}' bindload="imageLoad"></image>
     </div>
     <div style="width:75%;align:right;">
       <view class='item-desc'>
         <text class='item-title'>{{item.title}}</text>
         <view class='item-info'>
-          <text class='item-time'>{{item.create_date}}</text>
+          <text class='item-time'>{{item.createDate}}</text>
         </view>
       </view>
     </div>
