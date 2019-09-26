@@ -102,6 +102,7 @@
   color: #00b38a;
   font-size: 18px;
   font-weight: bold;
+  align-content: center;
 }
 
 .company .item-desc .desc-l .info {

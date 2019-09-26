@@ -2,25 +2,10 @@
 <view class="position-detail">
   <view class="pos-title">
     <view class="title text-ellipsis">{{title}}</view>
-    <!-- <view class="collection-icon"> -->
-      <!-- <image wx:if="{{haveCollect == true}}" class="icon" src="../../static/icon/star.png" /> -->
-      <!-- <image wx:else class="icon" src="../../static/icon/star_o.png" />
-      <text class="text">{{haveCollect == true ? '已收藏' : '未收藏'}}</text> -->
-    <!-- </view> -->
   </view>
   
   <!-- 公司简介-start -->
   <view class="company" bindtap="viewCompanyDetail">
-    <!-- <image wx:if='{{companyLogo}}' class="com-logo" src="{{companyLogo}}" />
-    <view class="item-desc">
-      <view class="desc-l">
-        <view class="title text-ellipsis">{{companyShortName}}</view>
-        <view class="info">{{advantage}}</view>
-      </view>
-      <view class="desc-r">
-        <image class="authentication" src="../../static/icon/icon_v.png" />
-      </view>
-    </view> -->
     <view class="info">{{content}}</view>
   </view>
   <!-- 公司简介-end -->
@@ -28,9 +13,14 @@
   <!-- 公司简介-start -->
   <view class="company">
     <view class="info">了解更多招聘信息，请扫码添加小编微信</view>
+  </view>
+  <view  class="company">
     <view class="desc-r">
       <image class="authentication" src='{{xzjUrl}}'/>
     </view>
+  </view>
+
+  <view>
     <view class="info">阅读 {{reading_amount}}</view>
   </view>
   <!-- 公司简介-end -->

@@ -76,7 +76,6 @@ Page({
         'content-type': 'application/json' // 默认值
       },
       success(res) {
-        console.log(res.data[0])
         that.setData({
           positionList: res.data
         })

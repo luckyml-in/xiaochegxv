@@ -17,7 +17,6 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    debugger;
     var url = app.apiName.positionDetail.replace('id', options.id);
     console.log("文章详情："+url);
     http(url).then(res => {
@@ -35,7 +34,7 @@ Page({
       tempData.title = res.data.title
 debugger
       // 处理公司logo
-      tempData.companyLogo = res.data.companyLogo
+      tempData.companyLogo = res.data.company_logo
       tempData.companyLogo = 'https:' + tempData.companyLogo.substring(tempData.companyLogo.indexOf("//") + 1, tempData.companyLogo.length)
 
       // 处理职位描述
